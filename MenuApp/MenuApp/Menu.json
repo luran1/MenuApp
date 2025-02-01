@@ -1,0 +1,103 @@
+
+{
+  "menu": [
+    {
+      "category": "Appetizers",
+      "items": [
+        {
+          "name": "Garlic Bread",
+          "description": "Crispy, buttery bread topped with garlic and herbs.",
+          "price": 5.99,
+          "dietary_info": ["Vegetarian", "Contains Dairy"]
+        },
+        {
+          "name": "Bruschetta",
+          "description": "Grilled bread topped with tomatoes, basil, and balsamic glaze.",
+          "price": 7.49,
+          "dietary_info": ["Vegetarian", "Vegan"]
+        },
+        {
+          "name": "Mozzarella Sticks",
+          "description": "Breaded mozzarella cheese sticks served with marinara sauce.",
+          "price": 6.99,
+          "dietary_info": ["Vegetarian", "Contains Dairy"]
+        }
+      ]
+    },
+    {
+      "category": "Main Courses",
+      "items": [
+        {
+          "name": "Spaghetti Bolognese",
+          "description": "Pasta served with a rich, savory meat sauce.",
+          "price": 12.99,
+          "dietary_info": ["Contains Gluten", "Contains Dairy"]
+        },
+        {
+          "name": "Chicken Alfredo",
+          "description": "Grilled chicken with a creamy Alfredo sauce over pasta.",
+          "price": 14.49,
+          "dietary_info": ["Contains Gluten", "Contains Dairy"]
+        },
+        {
+          "name": "Margherita Pizza",
+          "description": "Classic pizza topped with mozzarella, fresh basil, and tomato sauce.",
+          "price": 10.99,
+          "dietary_info": ["Vegetarian", "Contains Gluten", "Contains Dairy"]
+        },
+        {
+          "name": "Grilled Salmon",
+          "description": "Fresh salmon fillet grilled to perfection, served with vegetables.",
+          "price": 17.99,
+          "dietary_info": ["Gluten-Free", "Dairy-Free", "Paleo"]
+        }
+      ]
+    },
+    {
+      "category": "Desserts",
+      "items": [
+        {
+          "name": "Tiramisu",
+          "description": "Classic Italian dessert made with layers of coffee-soaked ladyfingers and mascarpone cheese.",
+          "price": 6.49,
+          "dietary_info": ["Contains Gluten", "Contains Dairy"]
+        },
+        {
+          "name": "Chocolate Lava Cake",
+          "description": "Warm chocolate cake with a gooey molten center, served with vanilla ice cream.",
+          "price": 7.99,
+          "dietary_info": ["Contains Gluten", "Contains Dairy"]
+        },
+        {
+          "name": "Cheesecake",
+          "description": "Rich and creamy cheesecake with a graham cracker crust.",
+          "price": 5.99,
+          "dietary_info": ["Contains Gluten", "Contains Dairy"]
+        }
+      ]
+    },
+    {
+      "category": "Beverages",
+      "items": [
+        {
+          "name": "Coke",
+          "description": "Classic Coca-Cola soda.",
+          "price": 2.50,
+          "dietary_info": ["Vegan", "Gluten-Free"]
+        },
+        {
+          "name": "Iced Tea",
+          "description": "Freshly brewed iced tea, served with lemon.",
+          "price": 2.99,
+          "dietary_info": ["Vegan", "Gluten-Free"]
+        },
+        {
+          "name": "Lemonade",
+          "description": "Refreshing homemade lemonade.",
+          "price": 3.49,
+          "dietary_info": ["Vegan", "Gluten-Free"]
+        }
+      ]
+    }
+  ]
+}
