@@ -17,12 +17,13 @@ struct MenuCategory:Identifiable, Codable {
     let items: [Item]
 }
 
-struct Item:Identifiable, Codable{
+struct Item:Identifiable, Codable, Hashable{
     let id = UUID()
     let name: String
     let description: String
     let price: Double
     let dietary_info: [String]
+    static let exampleItem = Item(name: "test", description: "test description", price: 9.99, dietary_info: ["dairy", "Keto"])
 }
 
 func loadMenu() -> Menu {

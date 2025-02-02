@@ -12,16 +12,24 @@ struct ContentView: View {
     var body: some View {
         NavigationStack{
             List{
+                
                 ForEach(menu.menu){ catagory in
                     Section(catagory.category){
                         ForEach(catagory.items){item in
-                            ItemView(item: item)
+                            
+                            NavigationLink(value: item){
+                                    ItemView(item: item)
+                                }
+                            
                         }
                     }
                 }
             }
             .listStyle(.plain)
             .navigationTitle("Resturant Name")
+            .navigationDestination(for: Item.self){selection in
+                DetailsView(item: selection)
+            }
         }
         
         
