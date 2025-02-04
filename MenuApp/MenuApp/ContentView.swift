@@ -9,8 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var menu = loadMenu()
+    var order: [String]=[]
+    @State private var path = NavigationPath()
     var body: some View {
-        NavigationStack{
+        NavigationStack(path: $path){
             List{
                 
                 ForEach(menu.menu){ catagory in
@@ -32,16 +34,12 @@ struct ContentView: View {
             }
             .toolbar{
                 ToolbarItem(placement: .primaryAction){
-                    Button{
-                        
-                    } label: {
+                    NavigationLink(destination: OrderView()){
                         Label("View Order", systemImage: "takeoutbag.and.cup.and.straw.fill")
                     }
                 }
                 ToolbarItem(placement: .navigation){
-                    Button{
-                        
-                    } label: {
+                    NavigationLink(destination: OrderView()){
                         Label("Search", systemImage: "magnifyingglass")
                     }
                 }

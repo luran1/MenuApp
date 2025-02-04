@@ -17,16 +17,20 @@ struct ItemListView: View {
                     .scaledToFit()
                     .frame(height:80)
                     .cornerRadius(4)
-                Text(item.price, format: .currency(code: Locale.current.identifier))
-                    .font(.headline)
-                    .fontWeight(.bold)
+                
             }
             VStack(alignment: .leading,spacing: 5){
-                Text(item.name)
-                    .font(.headline)
-                    .fontWeight(.bold)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.8)
+                HStack{
+                    Text(item.name)
+                        .font(.headline)
+                        .fontWeight(.bold)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.8)
+                    Spacer()
+                    Text(item.price, format: .currency(code: Locale.current.identifier))
+                        .font(.headline)
+                        .fontWeight(.bold)
+                }
                 
                 Text(item.description)
                     .font(.subheadline)
